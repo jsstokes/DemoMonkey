@@ -2,7 +2,7 @@
   <h3><u>Setup</u></h3>
   <P>{{selectedDemo.overview}}</P>
   <ol>
-    <li *ngFor="let step of selectedDemo.setup;let i1 = index;trackBy: trackByIndex">
+    <li *ngFor="let step of selectedDemo.setup;let i1 = index;">
       <input type="checkbox" ng-model="step[i1].checked" id="i1" (click)="checkClick($event,i1)"/>
       {{step.body}}<br>
       <span *ngFor="let button of step.buttons">

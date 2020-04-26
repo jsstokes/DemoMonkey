@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataServiceService } from "../data-service.service";
+import { ClipboardService } from "../clipboard.service";
 
 @Component({
   selector: 'app-demo-details',
@@ -10,14 +11,16 @@ export class DemoDetailsComponent implements OnInit {
 
   selectedDemo;
 
-  constructor(private dataService:DataServiceService) { }
+  constructor(private dataService:DataServiceService, private clipboard:ClipboardService) { }
 
   ngOnInit() {
     this.selectedDemo = this.dataService.getDemoList()[0];
   }
 
+
   copyToClipboard(text) {
-    console.log("Burron Clicked: ", text);
+    console.log("CopyToClipboard:", text);
+    this.clipboard.copyMessage(text);
   }
 
   checkClick(event,id) {
@@ -25,3 +28,4 @@ export class DemoDetailsComponent implements OnInit {
   }
 
 }
+
