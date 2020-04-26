@@ -1,1 +1,9 @@
-<p>demo-list works!</p>
+<div class="mainsection">
+  <h3><u>Available Demos</u></h3>
+  <dl>
+    <span *ngFor='let demo of demoList;let i=index' (click)='clicked([i])'>
+      <dt>{{demo.title}}</dt>
+      <dl>{{demo.description}}</dl>
+    </span>
+  </dl>
+</div>

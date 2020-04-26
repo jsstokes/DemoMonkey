@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataServiceService } from "../data-service.service";
 
 @Component({
   selector: 'app-demo-list',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DemoListComponent implements OnInit {
 
-  constructor() { }
+  demoList;
+
+  constructor(private dataService: DataServiceService) { }
 
   ngOnInit() {
+    this.demoList = this.dataService.getDemoList();
+  }
+
+  clicked(i) {
+    console.log("Clicked item was:", i);
   }
 
 }

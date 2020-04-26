@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background-color: rgb(93, 111, 72);
+}
+
+.mainsection {
+  background-color: rgb(159, 169, 139);
+  border-radius: 15px;
+  padding: 10px;
+  margin-top: 15px;
+  min-height: 100%;
+}
+button {
+  margin-right: 15px;
+  border-radius: 10px;
+  background-color: bisque;
+}

@@ -1,1 +1,25 @@
-<p>demo-details works!</p>
+<div class="mainsection">
+  <h3><u>Setup</u></h3>
+  <P>{{selectedDemo.overview}}</P>
+  <ol>
+    <li *ngFor="let step of selectedDemo.setup;let i1 = index;trackBy: trackByIndex">
+      <input type="checkbox" ng-model="step[i1].checked" id="i1" (click)="checkClick($event,i1)"/>
+      {{step.body}}<br>
+      <span *ngFor="let button of step.buttons">
+        <button (click)="copyToClipboard(button.textToCopy)" >{{button.label}}</button>
+      </span>
+      <br><br>
+    </li>
+  </ol>
+  <h3><u>Execution</u></h3>
+  <ol>
+    <li *ngFor="let step of selectedDemo.execution">
+      <input type="checkbox" ng-model="selectedDemo.checked" id="i1" (click)="checkClick($event,i1)"/>
+      {{step.body}}<br>
+      <span *ngFor="let button of step.buttons">
+        <button (click)="copyToClipboard(button.textToCopy)" >{{button.label}}</button>
+      </span>
+      <br><br>
+    </li>
+  </ol>
+</div>
