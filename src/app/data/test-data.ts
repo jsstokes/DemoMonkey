@@ -70,7 +70,8 @@ export var TestData = [
   {
     title: "RICH-QUERY Proof (#01)",
     overview: "Queries in Compass",
-    description: "",
+    repo: "https://github.com/10gen/pov-proof-exercises/blob/master/proofs/01",
+    description: "Ability to run a single expressive and efficient query targeting a specific subset of records using compound criteria spanning a number of fields, including fields in sub-documents & array elements",
     setup:[],
     execution: [
       {

@@ -1,5 +1,8 @@
 <div class="mainsection">
-  <h3><u>Setup</u></h3>
+  <h3>{{selectedDemo.title}}</h3>
+  <a href="{{selectedDemo.repo}}" target="new">Show Github Repo</a>
+  <P>{{selectedDemo.description}}</P>
+  <h4><u>Setup</u></h4>
   <P>{{selectedDemo.overview}}</P>
   <ol>
     <li *ngFor="let step of selectedDemo.setup;let i1 = index;">
@@ -11,7 +14,7 @@
       <br><br>
     </li>
   </ol>
-  <h3><u>Execution</u></h3>
+  <h4><u>Execution</u></h4>
   <ol>
     <li *ngFor="let step of selectedDemo.execution">
       <input type="checkbox" ng-model="selectedDemo.checked" id="i1" (click)="checkClick($event,i1)"/>

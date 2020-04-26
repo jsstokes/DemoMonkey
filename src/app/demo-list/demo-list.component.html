@@ -3,7 +3,7 @@
   <dl>
     <span *ngFor='let demo of demoList;let i=index' (click)='clicked([i])'>
       <dt>{{demo.title}}</dt>
-      <dl>{{demo.description}}</dl>
+      <dl>{{demo.overview}}</dl>
     </span>
   </dl>
 </div>
