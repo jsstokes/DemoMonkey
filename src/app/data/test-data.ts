@@ -1,7 +1,7 @@
 export var TestData = [
   {
     title: "Flexible (#02)",
-    description: "",
+    description: "Modify schema without effecting existing apps",
     overview: "",
     repo: "https://github.com/10gen/pov-proof-exercises/tree/master/proofs/02",
     setup: [
@@ -69,8 +69,8 @@ export var TestData = [
   },
   {
     title: "RICH-QUERY Proof (#01)",
+    overview: "Queries in Compass",
     description: "",
-    overview: "",
     setup:[],
     execution: [
       {
