@@ -16,8 +16,8 @@
   </ol>
   <h4><u>Execution</u></h4>
   <ol>
-    <li *ngFor="let step of selectedDemo.execution">
-      <input type="checkbox" ng-model="selectedDemo.checked" id="i1" (click)="checkClick($event,i1)"/>
+    <li *ngFor="let step of selectedDemo.execution; let i = index">
+      <input type="checkbox" ng-model="selectedDemo.checked" id="EXEC{{i}}" (click)="checkClick($event,i)"/>
       {{step.body}}<br>
       <span *ngFor="let button of step.buttons">
         <button (click)="copyToClipboard(button.textToCopy)" >{{button.label}}</button>
