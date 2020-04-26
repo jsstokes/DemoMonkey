@@ -64,6 +64,15 @@ export var TestData = [
             textToCopy: "./microservice_two.py"
           }
         ]
+      },
+      {
+        body: "Drop your collection and clean up and the end",
+        buttons: [
+          {
+            label: "Run in Terminal",
+            textToCopy: "./clean_environment.py"
+          }
+        ]
       }
     ]
   },
