@@ -18,6 +18,7 @@ export class DemoListComponent implements OnInit {
 
   clicked(i) {
     console.log("Clicked item was:", i);
+    this.dataService.setSelectedDemo(this.demoList[i]);
   }
 
 }
