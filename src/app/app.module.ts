@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { DemoViewComponent } from './demo-view/demo-view.component';
 import { DemoListComponent } from './demo-list/demo-list.component';
 import { DemoDetailsComponent } from './demo-details/demo-details.component';
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { DemoDetailsComponent } from './demo-details/demo-details.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
