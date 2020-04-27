@@ -7,6 +7,7 @@ export var TestData = [
     setup: [
       {
         body: "Open a console to: pov-proof-exercises/proofs/02",
+        complete: false,
         buttons: [
           {
             label: "CD in Terminal",
@@ -15,6 +16,7 @@ export var TestData = [
       },
       {
         body: "Create the model using the script in a terminal",
+        complete: true,
         buttons: [
           {
             label: "Copy to run in Terminal",
@@ -23,10 +25,12 @@ export var TestData = [
       },
       {
         body: "Open Compass",
+        complete: false,
         buttons: []
       },
       {
         body: "Go to the FLEXIBLE DB",
+        complete: false,
         buttons: []
       }
 

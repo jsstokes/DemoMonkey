@@ -29,6 +29,8 @@ export class DemoDetailsComponent implements OnInit {
 
   checkClick(event,id) {
     console.log("Check Clicked:", id);
+    console.log("Check Clicked: value is: ", this.selectedDemo.setup[id].complete);
+    console.log("Check Click event.ID:" , event.srcElement.id);
     console.log("Check Click event:" , event);
   }
 

@@ -6,7 +6,7 @@
   <P>{{selectedDemo.overview}}</P>
   <ol>
     <li *ngFor="let step of selectedDemo.setup;let i1 = index;">
-      <input type="checkbox" ng-model="step[i1].checked" id="i1" (click)="checkClick($event,i1)"/>
+      <input type="checkbox" ng-model="selectedDemo.setup[i1].complete" id="setup{{i1}}" (click)="checkClick($event,i1)"/>
       {{step.body}}<br>
       <span *ngFor="let button of step.buttons">
         <button (click)="copyToClipboard(button.textToCopy)" >{{button.label}}</button>
